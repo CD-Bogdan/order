@@ -1,0 +1,122 @@
+:root{
+
+    /* ### Primary */
+
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+
+    /* ### Neutral */
+
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 15px;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Pale-blue);
+}
+
+.main-container{
+    width: 328px;
+    height: 566px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+    top: 0;
+}
+.main-container img{
+    width: 100%;
+}
+.main-container h2{
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: var(--Dark-blue);
+}
+.main-container p{
+    text-align: center;
+    color: var(--Desaturated-blue);
+    line-height: 28px;
+}
+
+.plan{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    height: 85px;
+    background-color: #f8f9fe;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.music{
+    width: 50px;
+}
+.price h3{
+    margin-top: 25px;
+    margin-bottom: 0;
+    font-weight: 900;
+    color: var(--Dark-blue);
+}
+.price p{
+    margin-top: 0px;
+    color: var(--Desaturated-blue);
+}
+.change{
+    font-weight: 700;
+}
+input{
+    display: block;
+    margin: 20px auto;
+    padding: 15px 60px;
+    border: none;
+    background-color: var(--Bright-blue);
+    color: var(--Pale-blue);
+    font-weight: 900;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.cancel{
+    text-decoration: none;
+    display: block;
+    margin: 25px auto;
+    text-align: center;
+    color: #777d93;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1920px) {
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        padding: 20px;
+        margin: 0;
+        padding: 0;
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-position: center ;
+        background-repeat: no-repeat ;
+        background-size: cover ;
+    }
+    .main-container{
+        width: 325px;
+        height: 520px;
+    }
+    .plan{
+        width: 257px;
+        margin: 0 auto;
+    }
+}
